@@ -1,0 +1,105 @@
+name: Bug Report
+description: Report a bug or unexpected behavior in pisama-agent-sdk
+title: "[Bug]: "
+labels: ["bug", "triage"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the form below.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Minimal agent run that triggers the issue.
+      render: python
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: pisama-agent-sdk Version
+      description: Run `pip show pisama-agent-sdk` to find the version.
+      placeholder: "0.1.2"
+    validations:
+      required: true
+
+  - type: input
+    id: agent-sdk-version
+    attributes:
+      label: Claude Agent SDK Version
+      placeholder: "0.x.y"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: hook
+    attributes:
+      label: Affected Hook / Detector
+      options:
+        - loop
+        - injection
+        - hallucination
+        - cost
+        - coordination
+        - other / multiple / unsure
+    validations:
+      required: true
+
+  - type: input
+    id: python-version
+    attributes:
+      label: Python Version
+      placeholder: "3.11.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      options:
+        - macOS
+        - Linux
+        - Windows
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Logs
+      render: shell
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched existing issues to ensure this bug hasn't been reported
+          required: true
