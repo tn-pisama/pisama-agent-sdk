@@ -1,8 +1,14 @@
 # pisama-agent-sdk
 
+[![PyPI version](https://img.shields.io/pypi/v/pisama-agent-sdk.svg)](https://pypi.org/project/pisama-agent-sdk/)
+[![Python versions](https://img.shields.io/pypi/pyversions/pisama-agent-sdk.svg)](https://pypi.org/project/pisama-agent-sdk/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![CI](https://github.com/tn-pisama/pisama-agent-sdk/actions/workflows/ci.yml/badge.svg)](https://github.com/tn-pisama/pisama-agent-sdk/actions/workflows/ci.yml)
+[![Downloads](https://img.shields.io/pypi/dm/pisama-agent-sdk)](https://pypistats.org/packages/pisama-agent-sdk)
+
 Real-time failure detection hooks for the [Claude Agent SDK](https://github.com/anthropics/claude-code/tree/main/packages/claude-agent-sdk). Catches infinite loops, hallucinations, and other failure modes before they cause damage.
 
-Part of the [Pisama](https://pisama.dev) platform for multi-agent failure detection.
+Part of the [Pisama](https://pisama.ai) platform for multi-agent failure detection.
 
 ## Install
 
