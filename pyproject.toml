@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pisama-agent-sdk"
-version = "0.4.0"
+version = "0.4.1"
 description = "ATIF trace adapters and real-time failure hooks for agent runtimes (thin shim onto pisama.agents)"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -68,7 +68,7 @@ pisama-openhands-monitor = "pisama_agent_sdk.cli.openhands_monitor:main"
 
 [project.urls]
 Homepage = "https://pisama.ai"
-Documentation = "https://docs.pisama.ai/agent-sdk"
+Documentation = "https://github.com/Pisama-AI/pisama-agent-sdk#readme"
 Repository = "https://github.com/Pisama-AI/pisama-agent-sdk"
 Issues = "https://github.com/Pisama-AI/pisama-agent-sdk/issues"
 Changelog = "https://github.com/Pisama-AI/pisama-agent-sdk/blob/main/CHANGELOG.md"

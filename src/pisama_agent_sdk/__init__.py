@@ -46,7 +46,7 @@ Claude Agent SDK Custom Tool:
 # package's version. Keep this literal in lockstep with `[project]
 # version` in pyproject.toml -- the `package` CI job asserts they match
 # on every build.
-__version__ = "0.4.0"
+__version__ = "0.4.1"
 
 # Hook functions (primary API)
 # ATIF (Harbor) trajectory analysis

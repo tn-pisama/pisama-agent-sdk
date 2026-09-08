@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.4.1] - 2026-09-08
+
+### Fixed
+
+- Replace the retired documentation link with the canonical public README.
+- Defang the retired hostname in the historical security disclosure so it
+  cannot be followed or copied as a working endpoint. The warning and affected
+  version history remain included in the source distribution.
+- Update the pinned publisher for core metadata 2.5 support. Validation,
+  attestations and the eight artifact-install checks remain enabled.
+
+No runtime implementation, forwarding behavior or dependency floor changed.
+This release does not modify older installed artifacts or prove that exposed
+credentials used with older clients have been revoked.
+
 ## [0.4.0] - 2026-07-29
 
 ### Changed
@@ -104,7 +119,8 @@ worth holding as an invariant rather than re-deriving it each release.
 
 ### Security
 
-- `PisamaEvaluator` defaulted `base_url` to `https://mao-api.fly.dev`, a pre-rebrand
+- `PisamaEvaluator` defaulted `base_url` to the retired `mao-api[.]fly[.]dev`
+  hostname (defanged for safety; do not use as an endpoint), a pre-rebrand
   Fly.io hostname that is no longer a deployed app. Fly app names are globally unique
   and become claimable once released, so any third party could have created an app of
   that name and received the `api_key` this client sets as a default header on every
